@@ -1,0 +1,26 @@
+{
+  "name": "mern-starter-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "concurrently \"cd client && npm start\" \"nodemon .\"",
+    "install:client": "cd client && npm install",
+    "build:client": "cd client && npm run build",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^6.2.1",
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "ip": "^1.1.5",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.3",
+    "morgan": "^1.10.0"
+  }
+}
